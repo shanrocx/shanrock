@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+int X,P;
+int A=0;
+int Z;
+
+void main()
+{
+ scanf("%d %d",&X,&P);
+ while(X!=1)
+  {
+  A=A+X;
+  Z=ceil((X*P)/100);
+  X=X-Z;
+ }
+ printf("%d",A+1);
+}
